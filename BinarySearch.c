@@ -7,16 +7,11 @@ int main(){
 	for(i=0;i<len;i++){
 		arr[i]=i;
 	}
-	for(j=0;j<len;j++) printf("%d\n",arr[j]);
+//	for(j=0;j<len;j++) printf("%d\n",arr[j]);
 	printf("which number:\n");
 	scanf("%d",&key);
-	if key > len{
-		printf("overflow");
-	}
-	else{
-		int index = findByHalf(arr,len,key);
-		printf("%d",index);
-	}
+	int index = findByHalf(arr,len,key);
+	printf("%d",index);
 }
 
 int findByHalf(int arr[], int len, int key){
@@ -37,4 +32,5 @@ int findByHalf(int arr[], int len, int key){
    			return mid;
   		}
   	}
+  	return -1; 
 }
